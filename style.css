@@ -103,7 +103,7 @@ main {
   margin-bottom: 15px;
 }
 .shortsContianer {
-  width: 18%;
+  width: 20%;
   margin-right: 10px;
   cursor: pointer;
   margin-bottom: 50px;
@@ -141,7 +141,7 @@ main {
   width: 100%;
   height: 15px;
   position: absolute;
-  bottom: 20px;
+  bottom: 50px;
 }
 .shortsNextBtn button {
   width: 100%;
@@ -160,7 +160,7 @@ main {
   background-color: white;
   width: 100%;
   height: 100%;
-  position: absolute;
+  position: fixed;
   top: -100%;
   left: 0px;
   display: flex;
@@ -195,6 +195,7 @@ main {
   padding-bottom: 10px;
   border-bottom: 1px solid rgba(255, 0, 0, 0.3);
   margin-bottom: 50px;
+  margin-top: -50px;
 }
 .activeContents header .logo {
   width: 60%;
@@ -229,4 +230,16 @@ main {
 
 .active {
   top: 0px;
+}
+
+@media screen and (max-width: 1200px) {
+  .shorts-rows {
+    flex-direction: column;
+  }
+  .shortsContianer {
+    width: 100%;
+  }
+  .shortsContianer video {
+    width: 100%;
+  }
 }
